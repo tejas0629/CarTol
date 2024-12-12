@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Comparison Tool</title>
+    <link rel="icon" href="imgs/logo.webp" type="png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 style="font-family: 'Courier New', monospace;" >Welcome to CarTol !</h1>
+            <h3>Find Your Perfect Car</h3>
+            <div class="hero">
+                <h4>Pride with India</h4>
+            </div>
+            <a href="#car-selection-form" id="search-link">Search your Car</a>
+        </header>
+        <main>
+            <section id="car-avaiable" class="car-grid">
+            </section>
+            <section id="car-selection-form">
+                <label for="budget">Enter Your Budget (₹):</label>
+                <input type="number" id="budget" min="0" max="2000000" placeholder="Enter budget">
+                <label for="type">Select Car Type:</label>
+                <select id="type">
+                    <option value="Reliable">Reliable</option>
+                    <option value="Luxury">Luxury</option>
+                </select>
+                <label for="criteria">Choose Your Priority:</label>
+                <select id="criteria">
+                    <option value="Safety">Safety</option>
+                    <option value="High Mileage">High Mileage</option>
+                </select>
+                <button id="filter-cars">Find Cars</button>
+            </section>
+            <section id="car-recommendations" class="car-grid">
+            </section>
+        </main>
+
+        <footer>
+            <p>This website belongs to only Indian automobile brands.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>   
